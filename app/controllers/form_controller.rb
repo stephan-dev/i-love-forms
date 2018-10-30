@@ -1,4 +1,5 @@
-class User < ApplicationRecord
+class FormController < ApplicationController
+
 	def index
 		@user = User.all
 	end
@@ -9,4 +10,5 @@ class User < ApplicationRecord
 
 	def create
 	end
+
 end
