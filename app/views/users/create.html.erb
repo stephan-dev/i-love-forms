@@ -1,0 +1,18 @@
+<h1>Users#create</h1>
+<p>hello!</p>
+
+<%= form_tag url_for(action: '/create'), method: "post" do %>
+	<%= label_tag 'Ton nom' %>
+	<%= text_field_tag 'username' @post.username %>
+	<br><br>
+
+	<input type="email" name="email" placeholder="ton mail">
+	<%= label_tag 'ton email' %>
+	<%= text_field_tag 'email' @post.email %>
+
+	<%= label_tag 'décris-toi succintement!' %>
+	<%= text_area_tag 'bio' @post.bio %>
+
+	<%= submit_tag "Enregistrer!" %>
+</form>
+
